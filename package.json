@@ -1,0 +1,6 @@
+{
+  "name": "zhaojian-ming", "version": "0.3.0", "private": true, "license": "MIT",
+  "type": "module", "description": "照见 · 24 人物、12 关口，支持静态网站与本地 BYOK",
+  "scripts": { "start": "node server.mjs", "test": "node --test tests/*.test.mjs", "check": "node --check server.mjs && node --check public/app.js && node --check public/content.js && node --check public/engine.js && node --check public/byok.js && node --check public/events.js && node --check public/people.js && node --check public/quotes.js && node --check public/pointer.js && node --check public/share-card.js" },
+  "engines": { "node": ">=22" }
+}

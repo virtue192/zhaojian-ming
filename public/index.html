@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f0e7"><meta name="description" content="十二个明朝历史关口，十二次真实的取舍。走进时代，照见自己的选择。">
+  <title>照见 · 明朝抉择档案</title><link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/wenkai.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./typography.css"><link rel="stylesheet" href="./atmosphere.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#" id="home-link" aria-label="照见，返回首页"><span class="brand-seal" aria-hidden="true">照</span><span>照见<span class="brand-en">ZHAOJIAN</span></span></a>
+    <nav aria-label="主导航"><button data-nav="events">历史关口</button><button data-nav="people">人物档案</button><button data-action="method">关于测试</button></nav>
+    <div class="header-tools"><button id="motion-button" class="icon-button" aria-label="暂停装饰动效" aria-pressed="false" title="暂停装饰动效">Ⅱ</button><button class="key-button" data-action="settings"><span class="connection-dot" aria-hidden="true"></span><span id="connection-label">自带密钥 · AI 解读</span><span aria-hidden="true">↗</span></button></div>
+  </header>
+  <main id="main"></main>
+  <footer class="site-footer"><span class="footer-brand">照见 <span>在别人的历史里，看见自己的选择。</span></span><div><span>明朝篇 · 0.3 / 题句与笔墨</span><button data-action="method">史实与游戏边界 ↗</button></div></footer>
+  <dialog id="settings-dialog" aria-labelledby="settings-title">
+    <div class="dialog-heading"><span class="eyebrow">BRING YOUR OWN KEY</span><button class="icon-button" data-close="settings-dialog" aria-label="关闭密钥设置">×</button></div>
+    <h2 id="settings-title">让解读，再深入一点。</h2><p class="muted">基础测试无需密钥。连接你的模型，为这十二次选择生成一份补充分析。</p>
+    <form id="settings-form">
+      <label for="transport">调用方式</label><select id="transport"><option value="direct">浏览器直连 · 静态网站适用</option><option value="proxy">本机代理 · 需本地运行</option></select><p class="field-note" id="transport-note"></p><label for="provider">模型服务</label><select id="provider" name="provider"><option value="deepseek">DeepSeek</option><option value="custom">自定义兼容接口</option></select>
+      <label for="base-url">服务地址 <span>Base URL</span></label><input id="base-url" name="baseUrl" type="url" placeholder="https://api.example.com/v1" required autocomplete="off">
+      <label for="model">模型名称</label><input id="model" name="model" placeholder="填写服务支持的模型 ID" required autocomplete="off">
+      <label for="api-key">API Key</label><div class="key-input"><input id="api-key" name="apiKey" type="password" placeholder="粘贴你的 API Key" required autocomplete="off" spellcheck="false"><button type="button" id="show-key" aria-label="显示 API Key" aria-pressed="false">显示</button></div>
+      <p class="field-note">Key 仅保留在此页面内存中，刷新即清除。仅在测试连接或生成时按所选方式发送给你填写的模型服务；回答会在生成时随请求发送。调用费用由服务商收取。</p>
+      <p id="settings-status" class="form-status" role="status" aria-live="polite"></p>
+      <div class="dialog-actions"><button type="button" class="button secondary" id="test-connection">测试连接</button><button type="submit" class="button primary">应用配置 <span aria-hidden="true">↗</span></button></div>
+      <button type="button" class="text-button disconnect" id="disconnect-key">断开连接并清除密钥</button>
+    </form>
+  </dialog>
+  <dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-heading"><span class="eyebrow">HISTORICAL FIELD NOTES</span><button class="icon-button" data-close="info-dialog" aria-label="关闭档案">×</button></div><div id="info-content"></div></dialog>
+  <dialog id="restart-dialog" aria-labelledby="restart-title"><div class="dialog-heading"><span class="eyebrow">A NEW CHAPTER</span><button class="icon-button" data-close="restart-dialog" aria-label="关闭重新测试确认">×</button></div><h2 id="restart-title">重新走一遍？</h2><p>当前十二次选择和解读会清除，模型配置与本次页面中的密钥会保留。</p><div class="dialog-actions"><button class="button secondary" data-close="restart-dialog">保留当前档案</button><button class="button primary" id="confirm-restart">重新开始 ↗</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

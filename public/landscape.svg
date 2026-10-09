@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="780" viewBox="0 0 720 780">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e3dccb"/><stop offset="1" stop-color="#b4b7a0"/></linearGradient>
+  <linearGradient id="far" x2="0" y2="1"><stop stop-color="#a4a98f"/><stop offset="1" stop-color="#ded8c8"/></linearGradient>
+  <linearGradient id="mountain" x2="0.2" y2="1"><stop stop-color="#657460"/><stop offset="1" stop-color="#334c40"/></linearGradient>
+  <linearGradient id="front" x2="0.4" y2="1"><stop stop-color="#495e48"/><stop offset="1" stop-color="#293d31"/></linearGradient>
+  <clipPath id="arch"><path d="M90 606V324a270 270 0 01540 0v282Z"/></clipPath>
+  <pattern id="grain" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".6" fill="#fff" opacity=".16"/><circle cx="8" cy="7" r=".5" fill="#183426" opacity=".13"/></pattern>
+ </defs>
+ <g stroke="#79816c" fill="none" opacity=".3"><circle cx="360" cy="346" r="319"/><circle cx="360" cy="346" r="303" stroke-dasharray="2 9"/><path d="M360 5v32m0 618v32M17 346h36m614 0h36"/><ellipse cx="360" cy="346" rx="342" ry="108" transform="rotate(-30 360 346)"/></g>
+ <g clip-path="url(#arch)">
+  <path d="M90 606V324a270 270 0 01540 0v282Z" fill="url(#sky)"/>
+  <circle cx="452" cy="202" r="47" fill="#b77150" opacity=".68"/>
+  <g stroke="#f9f5e9" stroke-width="1" fill="none" opacity=".5"><path d="M72 278q153-41 322 0t280 6M44 292q181-37 345-3t290 7M65 306q164-36 331-3t278 7M91 321q143-31 300-3t237 8"/></g>
+  <path d="M35 421l122-110 47 35 84-127 43 61 77 73 75-72 62 58 100-27 58 98v215H35Z" fill="url(#far)"/>
+  <g fill="none" stroke="#7a8a71" opacity=".4"><path d="M202 346l82-112-23 128-32 35M286 222l33 108 18 90M432 325l51-44-23 100M541 331l-14 98"/></g>
+  <path d="M-50 560l120-55 88-115 47 69 67-34 98-137 46 107 40 21 46 110 38-75 61 53 118-30v250H-50Z" fill="url(#mountain)"/>
+  <g fill="none" stroke="#d4d9b8" opacity=".28"><path d="M67 505l86-101-37 135M157 391l26 132M277 423l90-111-42 192M373 299l25 130 41 46M291 453l67-72-13 77M497 525l37-63-8 90M592 509l-28 59"/></g>
+  <path d="M87 602q125-58 188-41t102-6q33-19 34-66q-14-33 3-53q26 38 12 63q-8 36-3 55q37 34 114 30t107 28v56H87Z" fill="#d9dac2" opacity=".85"/>
+  <path d="M-20 598l116-15 50-49 45 19 50-52 54 18 38 37 56 14 57 31 68-46 30-26 63 46 48-25 106 48v149H-20Z" fill="url(#front)"/>
+  <g stroke="#9ba487" fill="none" opacity=".35"><path d="M47 600l94-55 38 34M192 553l46-39-10 64M245 516l36 44M337 570l59 31M450 600l50-55 30 49M561 578l25 29M623 579l31 53"/></g>
+  <g fill="#233a2d"><path d="M559 500v74h3v-74zM542 526l20-34 21 34zM538 544l24-38 26 38zM535 559l27-38 28 38z"/><path d="M174 473v66h3v-66zM160 497l16-31 19 31zM153 516l23-37 23 37z"/></g>
+  <g fill="#ddd8bb" stroke="#243c2d" stroke-width="2"><path d="M356 537h55v37h-55z"/><path d="M343 537q28-5 40-20q10 16 40 20z"/><path d="M354 518q20-4 29-16q9 12 29 16z"/><path d="M365 518h36v16h-36z"/><path d="M368 546v28m13-28v28m14-28v28"/></g>
+  <path d="M90 606V324a270 270 0 01540 0v282Z" fill="url(#grain)"/>
+ </g>
+ <path d="M90 606V324a270 270 0 01540 0v282Z" fill="none" stroke="#68785f" stroke-width="1.2"/>
+ <path d="M78 617V324a282 282 0 01564 0v293Z" fill="none" stroke="#8e967e" stroke-width=".6"/>
+ <g fill="#a14b37"><circle cx="636" cy="184" r="7"/><circle cx="74" cy="437" r="5"/><path d="M91 110l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/></g>
+ <g font-family="Georgia,serif" fill="#646d5a" font-size="11" letter-spacing="3"><text x="35" y="713">1368</text><text x="607" y="713">1644</text><text x="290" y="715">THE MING ERA</text></g>
+ <path d="M98 708h161m210 0h131" stroke="#a3a28d" stroke-width=".7"/>
+ <g transform="translate(590 623) rotate(7)"><rect width="58" height="72" rx="2" fill="none" stroke="#a14b37" stroke-width="2"/><rect x="4" y="4" width="50" height="64" fill="none" stroke="#a14b37"/><text x="29" y="29" text-anchor="middle" fill="#a14b37" font-family="serif" font-size="21">照</text><text x="29" y="55" text-anchor="middle" fill="#a14b37" font-family="serif" font-size="21">见</text></g>
+</svg>
